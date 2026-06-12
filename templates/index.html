@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Lesson Planner</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>AI Lesson Planner</h1>
+
+<form action="/generate" method="POST">
+
+    <input type="text"
+           name="subject"
+           placeholder="Enter Subject"
+           required>
+
+    <input type="text"
+           name="topic"
+           placeholder="Enter Topic"
+           required>
+
+    <input type="text"
+           name="duration"
+           placeholder="Class Duration"
+           required>
+
+    <select name="difficulty">
+
+        <option>Easy</option>
+        <option>Medium</option>
+        <option>Hard</option>
+
+    </select>
+
+    <button type="submit">
+        Generate Lesson Plan
+    </button>
+
+</form>
+
+</div>
+
+</body>
+</html>

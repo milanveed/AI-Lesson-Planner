@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lesson Plan</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Generated Lesson Plan</h1>
+
+<pre>
+{{ lesson }}
+</pre>
+
+<a href="/">Generate Another</a>
+
+</div>
+
+</body>
+</html>
